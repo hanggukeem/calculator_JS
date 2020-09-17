@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="4">
+              <span id="res"></span>
+              <input type="text" id="inputNum" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" onclick="reset()">AC</td>
+            <td onclick="cal('%')">%</td>
+            <td onclick="cal('/')">÷</td>
+          </tr>
+          <tr>
+            <td onclick="cal(7)">7</td>
+            <td onclick="cal(8)">8</td>
+            <td onclick="cal(9)">9</td>
+            <td onclick="cal('*')">×</td>
+          </tr>
+          <tr>
+            <td onclick="cal(4)">4</td>
+            <td onclick="cal(5)">5</td>
+            <td onclick="cal(6)">6</td>
+            <td onclick="cal('-')">−</td>
+          </tr>
+          <tr>
+            <td onclick="cal(1)">1</td>
+            <td onclick="cal(2)">2</td>
+            <td onclick="cal(3)">3</td>
+            <td onclick="cal('+')">+</td>
+          </tr>
+          <tr>
+            <td colspan="2" onclick="cal(0)">0</td>
+            <td onclick="cal('.')">.</td>
+            <td onclick="calculate()">=</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- div#wrap -->
+  </body>
+</html>
